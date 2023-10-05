@@ -54,3 +54,21 @@ console.log(carro.modelo);
 console.log(`Carros da ${carro.marca} tem a cor ${carro.cor}`);
 
 console.log(`Este carro tem ${carro.opcionais[0]} e ${carro.opcionais[2]}`);
+
+
+/* 
+1) Crie um novo objeto contendo informações de algo que você gosta (filme, livro, comida, jogo e etc...)
+*/
+
+let jogos = {
+    nome: ["Euro Truck Simulator", "Gran Theft Auto", "Counter-Strike"],
+    tipo: ["Simulador", "Mundo Aberto", "Fps"],
+    plataforma: "Computador",
+
+}
+
+/* 
+2) Mostre uma mensagem com pelo menos 2 propriedades do objeto que você criou
+*/
+
+console.log(`Sou um pouco seletivo para jogos, vou citar algum deles: 1º - ${jogos.nome[0]} [${jogos.tipo[0]}], 2º - ${jogos.nome[1]} [${jogos.tipo[1]}], 3º - ${jogos.nome[2]} [${jogos.tipo[2]}], todos eles são jogados na plataforma: ${jogos.plataforma} `);
