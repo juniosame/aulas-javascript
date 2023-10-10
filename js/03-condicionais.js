@@ -6,8 +6,8 @@ E a partir do resultado desta análise (verdadeiro ou falso), o programa pode ex
 Comandos mais comuns: if (se), else (senão), else if (senão se)
 */
 
-let usuario = "Juean";
-let idade = 19;
+let usuario = prompt("Qual seu nome?");
+let idade = prompt("Quantos anos você tem?");
 
 let mensagem; //Omdefomoda/Undefined
 
@@ -23,3 +23,4 @@ else {
 
 // Apresentando os resultados APÓS a condicional
 console.log(`${usuario} é ${mensagem} de idade!`);
+alert(`${usuario} é ${mensagem} de idade!`);
