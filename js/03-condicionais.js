@@ -13,14 +13,29 @@ let mensagem; //Omdefomoda/Undefined
 
 
 // Verficar a idade e determinar se é menor ou maior
-if(idade >= 18){
-    mensagem = "Maior"
-} 
-else {
-    mensagem = "Menor"
-}
+// if(idade >= 18){
+//     mensagem = "Maior"
+// } 
+// else {
+//     mensagem = "Menor"
+// }
 
 
 // Apresentando os resultados APÓS a condicional
-console.log(`${usuario} é ${mensagem} de idade!`);
-alert(`${usuario} é ${mensagem} de idade!`);
+// console.log(`${usuario} é ${mensagem} de idade!`);
+// alert(`${usuario} é ${mensagem} de idade!`);
+
+
+// Condicional Sucessiva
+
+if(idade >= 60) {
+    mensagem = "Idoso(a)";
+} else if(idade >= 18){
+    mensagem = "Adulto(a)";
+} else {
+    mensagem = "Menor";
+}
+
+console.log(`${usuario} você tem ${idade} anos e é considerado ${mensagem},`);
+
+alert(`${usuario} você tem ${idade} anos e é considerado ${mensagem},`);
