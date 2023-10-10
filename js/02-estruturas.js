@@ -72,3 +72,64 @@ let jogos = {
 */
 
 console.log(`Sou um pouco seletivo para jogos, vou citar algum deles: 1º - ${jogos.nome[0]} [${jogos.tipo[0]}], 2º - ${jogos.nome[1]} [${jogos.tipo[1]}], 3º - ${jogos.nome[2]} [${jogos.tipo[2]}], todos eles são jogados na plataforma: ${jogos.plataforma} `);
+
+
+console.log("-------------------------------");
+
+// Objeto com array e com outro objeto
+
+let pessoa = {
+    nome: "Shiryu",
+    idade: 20,
+    telefones: ["11-2135-0300", "11-91234-5678"],
+    medidas: {
+        peso: 65,
+        altura: 1.75
+    }
+}
+
+console.log(`Nome: ${pessoa.nome}`);
+console.log(`Celular: ${pessoa.telefones[1]}`);
+console.log(`Peso: ${pessoa.medidas.peso} Kg`);
+
+
+console.log("-------------------------------");
+
+// Array de Objetos
+let alunos = [
+
+    {
+        nome: "Naruto",
+        idade: 10
+    },
+
+    {
+        nome: "Guts",
+        idade: 30
+    },
+
+    {
+        nome: "Dohko",
+        idade: 120
+    }
+];
+
+console.log(alunos[1].nome); /// Guts
+console.log(alunos[0].nome); /// Naruto
+console.log(`Cavaleiro de ouro originalmente era o ${alunos[2].nome} de Libra que tem ${alunos[2].idade} anos`);
+
+
+console.log("-------------------------------");
+
+// Array como Matriz
+let tecnologias = [
+    ["HTML5", "CSS3", "JavaScript"],
+    ["PHP", "SQL", "APIs", "Node", "Python"],
+    ["Figma", "Photoshop"]
+];
+
+console.log(tecnologias[1][3]); // Node
+console.log(tecnologias[2][1]); // Photoshop
+console.log(tecnologias[0][0]); // HTML5
+
+console.log("-------------------------------");
