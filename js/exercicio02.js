@@ -1,3 +1,4 @@
+"use strict";
 let alunos = [
     {
         nome: "Jõao",
@@ -17,7 +18,7 @@ let alunos = [
 
 let i = 0;
 
-while(i < alunos[1][2].id){
-    console.log(`Aluno: ${alunos.id}`);
+while(i < alunos.length){
+    console.log(`Aluno: ${alunos[i].nome}`);
     i++;
 }
