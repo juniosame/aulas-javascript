@@ -43,6 +43,19 @@ let i = 1  // Delacaração da variavel
 i <= 10  // Condição
 i++  // Atualização
 */
-for(let i = 1; i <= 10; i++){
-    console.log(`i vale ${i}`);
+// for(let i = 1; i <= 10; i++){
+//     console.log(`i vale ${i}`);
+// }
+
+
+/* Loop com array */
+
+let clientes = ["Ozzy","Dio","Gillan","Martin","Hughes","Mercury"];
+
+// for(let i = 0; i < 5; i++){
+//     console.log(`Cliente: ${clientes[i]}`);
+// }
+
+for(let i = 0; i < clientes.length; i++){
+    console.log(`Clientes: ${clientes[i]}`)
 }
