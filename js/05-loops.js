@@ -50,12 +50,19 @@ i++  // Atualização
 
 /* Loop com array */
 
-let clientes = ["Ozzy","Dio","Gillan","Martin","Hughes","Mercury"];
+let clientes = ["Ozzy","Dio","Gillan","Martin","Hughes","Mercury","MC Biribinha"];
 
 // for(let i = 0; i < 5; i++){
 //     console.log(`Cliente: ${clientes[i]}`);
 // }
 
-for(let i = 0; i < clientes.length; i++){
+// for(let i = 0; i < clientes.length; i++){
+//     console.log(`Clientes: ${clientes[i]}`)
+// }
+
+// "Cache/Memória" da quantidade de elementos do array
+let quantidade = clientes.length
+
+for(let i = 0; i < quantidade; i++){
     console.log(`Clientes: ${clientes[i]}`)
 }
