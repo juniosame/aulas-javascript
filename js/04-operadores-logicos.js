@@ -20,8 +20,8 @@ const limiteDeFaltas = 10;
 
 // Resultados do aluno
 let aluno = "Jean";
-let mediaFinal = 8.5;
-let faltas = 8;
+let mediaFinal = 8;
+let faltas = 1;
 let resultado;
 
 console.log("---------------------------------------------");
@@ -35,15 +35,45 @@ console.log("---------------------------------------------");
 //     resultado = "Reprovado";
 // }
 
-if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
+// if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
+//     resultado = "Aprovado";
+// } else if(faltas > limiteDeFaltas){
+//     resultado = "Reprovado por Faltas";
+// } else {
+//     resultado = "Reprovado"
+// }
+
+if(faltas > limiteDeFaltas) {
+    resultado = "Reprovado por Faltas"
+} else if(mediaFinal >= mediaMinima){
     resultado = "Aprovado";
-} else if(faltas > limiteDeFaltas){
-    resultado = "Reprovado por Faltas";
 } else {
-    resultado = "Reprovado"
+    resultado = "reprovado"
 }
 
 
 console.log(`O aluno ${aluno} está ${resultado}`);
 console.log(`Média do aluno: ${mediaFinal}`);
 console.log(`Faltas do aluno: ${faltas}`);
+
+console.log("---------------------------------------------");
+
+//  Operador lógico || (OR - OU)
+
+let diaDaSemana = "domingo";
+
+if(diaDaSemana == "sábado" || diaDaSemana == "domingo"){
+    console.log("Final de Semana 😅");
+} else {
+    console.log("Vá trabalhar... 🤡")
+}
+
+console.log("---------------------------------------------");
+
+//  Operador Lógico ! (NOT - NÃO/NEGAÇÃO)
+let blackFriday = true;
+if(!blackFriday){
+    console.log("Preços normais...");
+} else {
+    console.log("Preços com desconto...");
+}
