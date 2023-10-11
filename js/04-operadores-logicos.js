@@ -29,12 +29,21 @@ console.log("---------------------------------------------");
 
 // Operador lógico && (AND - E)
 
-if(mediaFinal >= mediaMinima && faltas < limiteDeFaltas){
+// if(mediaFinal >= mediaMinima && faltas < limiteDeFaltas){
+//     resultado = "Aprovado";
+// } else {
+//     resultado = "Reprovado";
+// }
+
+if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
     resultado = "Aprovado";
+} else if(faltas > limiteDeFaltas){
+    resultado = "Reprovado por Faltas";
 } else {
-    resultado = "Reprovado";
+    resultado = "Reprovado"
 }
 
-console.log(`O aluno ${aluno} está ${aluno}`);
+
+console.log(`O aluno ${aluno} está ${resultado}`);
 console.log(`Média do aluno: ${mediaFinal}`);
 console.log(`Faltas do aluno: ${faltas}`);
