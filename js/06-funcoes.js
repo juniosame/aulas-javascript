@@ -55,10 +55,61 @@ console.log(somar(30,47.8));
 /* Formatação de valores em Reais */
 
 
-let preco = 1230;
+let preco = 1000;
 let desconto = preco * 0.10; // 10%
 let precoFinal = preco - desconto;
 
-console.log(`Preço: ${preco.toLocaleString()}`);
-console.log(`Desconto: ${desconto.toLocaleString()}`);
-console.log(`Preço Final: ${precoFinal.toLocaleString()}`);
+
+
+
+// console.log(`Preço: ${preco.toLocaleString("pt-br", {
+//     style: "currency",
+//     currency: "BRL"
+// })}`);
+// console.log(`Desconto: ${desconto.toLocaleString("pt-br", {
+//     style: "currency",
+//     currency: "BRL"
+// })}`);
+// console.log(`Preço Final: ${precoFinal.toLocaleString("pt-br", {
+//     style: "currency",
+//     currency: "BRL"
+// })}`);
+
+
+// REFATORANDO
+
+// function formatarPreco(valor) {
+//     return valor.toLocaleString("pt-br", {
+//         style: "currency",
+//         currency: "BRL"
+//     })
+    
+// }
+
+// console.log(`Preço: ${formatarPreco(preco)}`
+// );
+
+// console.log(`Desconto: ${formatarPreco(desconto)}`
+// );
+
+// console.log(`Preço Final: ${formatarPreco(precoFinal)}`
+// );
+
+function formatarPreco(valor){
+    let opcoes = {
+        style: "currency",
+        currency: "BRL"
+    };
+
+    return valor.toLocaleString("pt-br", opcoes);
+}
+
+
+console.log(`Preço: ${formatarPreco(preco)}`
+);
+
+console.log(`Desconto: ${formatarPreco(desconto)}`
+);
+
+console.log(`Preço Final: ${formatarPreco(precoFinal)}`
+);
