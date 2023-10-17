@@ -22,3 +22,20 @@ while(i < alunos.length){
     console.log(`Aluno: ${alunos[i].nome}`);
     i++;
 }
+
+console.log("-------------------------------------");
+
+let quantidadeAlunos = alunos.length;
+
+for(let z = 0; z < quantidadeAlunos; z++){
+    console.log(alunos[z].nome);
+}
+
+
+console.log("-------------------------------------");
+
+let f = 0;
+while(f < quantidadeAlunos){
+    console.log(alunos[f].nome);
+    f++;
+}
