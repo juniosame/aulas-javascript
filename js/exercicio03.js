@@ -51,7 +51,7 @@ let dolar = 1000;
 
 // Variável que receberá o resultado processado pela função DEPOIS que
 // a função terminar sua execução
-let valor = converteMoeda(cotacao, dolar);
+let valorConvertido = converteMoeda(cotacao, dolar);
 
 
 //  Função que realiza a conversão matemática ao receber PARÂMETROS
@@ -59,9 +59,20 @@ function converteMoeda(cotacao, dolar){
     return cotacao * dolar;
 }
 
+function formatarMoeda(valor, local, moeda){
+    let opcoes = {
+        style: "currency",
+        currency: moeda
+    };
+
+    return valor.toLocaleString(local, opcoes);
+}
 
 // Saidas após o processamento
-console.log(dolar); // Valor em Dolar
-console.log(valor); // Valor Convertido
-console.log("-----------------------------------------------------");
-console.log(`o Valor de ${dolar} foi convertido para `); // Valor em Dolar
+// console.log(dolar); // Valor em Dolar
+// console.log(valorConvertido); // Valor Convertido
+// console.log("-----------------------------------------------------");
+// console.log(`o Valor de ${dolar} foi convertido para ${valorConvertido} `); // Valor em Dolar
+
+console.log(formatarMoeda(dolar, "en", "USD"));
+console.log(formatarMoeda(valorConvertido, "pt-br", "BRL"));
